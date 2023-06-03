@@ -16,11 +16,13 @@ Look fellas, I'm on the autism spectrum. So my brain is wired differently. Not b
 
 **Pronouns**: She/Her
 
+**Drink of Choice**: Ginger Beer, Preferably Non-Alcoholic
+
+
 **[MBTI](https://www.16personalities.com)**: [INFJ - Advocate](https://www.16personalities.com/infj-personality)
 
 **Alignment**: Neutral Good
 > If you know, you know
-
 
 ## Socials
 Find me on [GitHub](https://github.com/edamame-v), I might have a twitter in the future, but meh.
