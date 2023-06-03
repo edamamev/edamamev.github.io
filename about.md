@@ -15,18 +15,20 @@ Look fellas, I'm on the autism spectrum. So my brain is wired differently. Not b
 - I can get overwhelmed when there's a lot happening all at once. This won't often be a problem as I've learnt ways to cope, but after an absolute wreck of a day, the last thing I need is someone yelling at me. I will likely just stand there while my brain reboots :D
 - 
 
+**Pronouns**: She/Her
+
 **[MBTI](https://www.16personalities.com)**: [INFJ - Advocate](https://www.16personalities.com/infj-personality)
 
 **Alignment**: Neutral Good
 > If you know, you know
 
-**Pronouns**: She/Her
 
 ## Socials
 Find me on [GitHub](https://github.com/edamame-v), I might have a twitter in the future, but meh.
 
 ## In Closing...
-So yeah! This page is gonna be occassionally updated when there's more 'Me Lore' I want to share with the world, but until then, take a look at some [blod posts!](https://edamame-v.github.io) Who knows what I've been up to, I sure as hell don't.
+So yeah! This page is gonna be occassionally updated when there's more 'Me Lore' I want to share with the world, but until then, take a look at some [blog posts!](https://edamame-v.github.io) Who knows what I've been up to, I sure as hell don't.
 
 Take care, and until next time,
+
 Cheers.
