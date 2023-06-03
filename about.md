@@ -13,7 +13,6 @@ Look fellas, I'm on the autism spectrum. So my brain is wired differently. Not b
 - Reserved when working, I need to be doing work. I like feeling satisfied with my work.
 - Gonna have niche interests I could talk at length for, but will likely listen and be interested in what's happening in your life.
 - I can get overwhelmed when there's a lot happening all at once. This won't often be a problem as I've learnt ways to cope, but after an absolute wreck of a day, the last thing I need is someone yelling at me. I will likely just stand there while my brain reboots :D
-- 
 
 **Pronouns**: She/Her
 
