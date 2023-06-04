@@ -15,6 +15,9 @@ links:
   - name:         About Me
     url:          /about
     external:     false
+  - name:         Resumes
+    url:          /resumes
+    external:     false
 # ------------ CONFIGURABLE END ------------
 
 permalink:        /posts/:title
