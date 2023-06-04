@@ -2,10 +2,8 @@
 title: Resumes
 ---
 
-Yo!
+> Doot da doot doo
 
-Let's see if this works...
-[docs/Resume-Template.pdf](docs/Resume-Template.pdf)
+[Generic Resume](docs/Resume-Template.pdf)
+> Without Work Experience.
 
-And let's see if *this* works:
-![[docs/Resume-Template.pdf]](docs/Resume-Template.pdf)

@@ -1,6 +1,6 @@
 ---
 title: First Post! Woot!
-date: 2023-05-06 01:30:00
+date: 2023-05-04 01:30:00
 ---
 
 Set this site up! Really happy with how it's turned out, took me the better part of the day, but it's really worth it :D
