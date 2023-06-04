@@ -4,7 +4,7 @@ title: About Me
 
 Ah! Welcome, welcome! Please, grab a seat, and make yourself at home. Allow me to regail you with my story:
 
-## "It's a bad time to get lost friend..."
+## "You picked a bad time to get lost friend..."
 So heyyy~! I'm Edme (Ed-may), a student at the [Queensland University of Technology](https://qut.edu.au) studying a Bachelor of Biomedical Sciences. I've loved computers since primary school, but want my career to be in the health industry.
 > With IT pervading every aspect of most industries, I can imagine a future where I meet both in the middle. Could be a fun future ;)
 
