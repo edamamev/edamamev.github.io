@@ -25,7 +25,7 @@ navigation.
 
 The more I sat on the idea, the more I realised I could add a *SHIT TONNE* of worldbuilding automation.
 
-AND AND AND, there's the idea of a fantasy medieval economy, inspired by the supplement [Grain Into Gold](https://www.drivethrurpg.com/product/13113/Grain-Into-Gold).
+AND AND AND, there's the idea of a fantasy medieval economy, inspired by the supplement [Grain Into Gold](https://www.drivethrurpg.com/product/13113/Grain-Into-Gold/).
 I spent an **ungodly** amount of time converting a lot of the material into Obsidian notes, and I can use the data I've gathered to create a piece of software to...
 
 Be my Worldbuilding Assistant.
