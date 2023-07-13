@@ -18,8 +18,7 @@ BUT IT'S DIFFERENT.
 ---
 
 The difference is, I have [Obsidian](https://obsidian.md/) as the main database that I use for my GMing space.
-It's easy to use, has some awesome features to make my version of worldbuilding make sense, and allows for quick data 
-navigation.
+It's easy to use, has some awesome features to make my version of worldbuilding make sense, and allows for quick data navigation.
 
 *However*, that's only 1 part of what my original GM Campaign Manager set out to achieve.
 
