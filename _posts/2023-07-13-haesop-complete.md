@@ -1,6 +1,6 @@
 ---
 title: What I've Been Up To
-date: 2023-07-13 21:41:00
+date: 2023-07-13 11:50:00
 ---
 
 OK SO
@@ -19,7 +19,14 @@ So, yeah! That's what I've been up to recently, just helping her out with writin
 
 It's been really cool working with her, and maybe whoever is reading this will get a kick out of it too.
 
-[Check out the game here!](https://cudsys.github.io/haesop/)[^1]
+[Check out the game here!](https://cudsys.github.io/haesop/)
 
 ---
-[^1:] It hasn't been released as of writing this post, but hopefully it will be up shortly!
+So that aside, my Worldbuilding Assistant is still in the Brainstorming phase.
+Next post, I'll have a lot more to share about it.
+However, I can share a few important details.
+1. I've been looking into Ray Dalio's book on 'The Changing World Order' for a model of world powers and empire to create a better economic/political system. It's been under fire for not holding one of it's subjects to the same criteria as others, and is deemed as inaccurate, but I will be using his model for fantasy worldbuilding, so I hope it serves its job ok :D
+2. I've been looking at how much data I want to store, how much I want to automate, and how I'm going to abstract the problem. Maybe looking into City Skylines 2 would be an idea, but I'm sure it's going to be a lot of reading up on simulation papers and trial and error.
+3. I'm hopefully gonna produce a public progress report once a week, but as uni kicks back up, those updates may contain less and less. We'll see <3
+
+So yeah! One project down, with another one on the horizon.
