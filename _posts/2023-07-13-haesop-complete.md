@@ -19,7 +19,7 @@ So, yeah! That's what I've been up to recently, just helping her out with writin
 
 It's been really cool working with her, and maybe whoever is reading this will get a kick out of it too.
 
-[Check out the game here!](https://cudsys.itch.io/haesop/)
+[Check out the game here!](cudsys.itch.io/haesop/)
 
 ---
 So that aside, my Worldbuilding Assistant is still in the Brainstorming phase.
