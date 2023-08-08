@@ -2,8 +2,8 @@
 title: Resumes
 ---
 
-> Doot da doot doo
+:D
 
 [Generic Resume](docs/Generic-Resume.pdf)
-> Without Work Experience.
 
+If you want a list of relevant work experience, please email me.
