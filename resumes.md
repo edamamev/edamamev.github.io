@@ -4,6 +4,6 @@ title: Resumes
 
 > Doot da doot doo
 
-[Generic Resume](docs/Resume-Template.pdf)
+[Generic Resume](docs/Generic-Resume.pdf)
 > Without Work Experience.
 
