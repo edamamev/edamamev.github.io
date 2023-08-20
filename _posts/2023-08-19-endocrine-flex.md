@@ -34,7 +34,7 @@ So, voila!
 ### Adrenal Glands Portion
 ![Adrenal Diagram Port](../images/2023-08-19/endocrine_adrenal_glands.png)
 ### Cervical Region and Thymus Portion
-![Cervical Region and Thymus Portion](../images/2023-08-19/endocrine_cervical_thymus.png)
+![Cervical Region and Thymus Portion](../images/2023-08-19/endocrine_cervical_and_thymus.png)
 ### Anterior Pituitary Hormones
 ![Anterior Pituitary Portion](../images/2023-08-19/endocrine_anterior_pituitary_hormones.png)
 ### Thyroids Portion
