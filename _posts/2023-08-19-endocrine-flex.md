@@ -29,16 +29,6 @@ This key difference is why the Endocrine System has quite a lot to do with regul
 ## The Flow
 Am I going to get into the entire flow of the Endocrine System in this blog post? Absolutely not. BUT, I did spend a long time creating a canvas page using Obsidian so I can better visualise the flow of Hormones throughout the body.
 So, voila!
-### Full Endocrine Diagram
-![Full Endocrine Diagram](images/2023-08-19/endocrine0.png)
-### Adrenal Glands Portion
-![Adrenal Diagram Port](images/2023-08-19/endocrine_adrenal_glands.png)
-### Cervical Region and Thymus Portion
-![Cervical Region and Thymus Portion](images/2023-08-19/endocrine_cervical_thymus.png)
-### Anterior Pituitary Hormones
-![Anterior Pituitary Portion](images/2023-08-19/endocrine_anterior_pituitary_hormones.png)
-### Thyroids Portion
-![Thyroids Portion](images/2023-08-19/endocrine_thyroids.png)
 
 ---
 > Did you just make this blog post so you could post your endocrine diagram online to show off?
