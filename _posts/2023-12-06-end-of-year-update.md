@@ -1,6 +1,6 @@
 ---
 title: End of 2023
-date: 2023-12-04 11:00:00
+date: 2023-12-06 11:00:00
 ---
 
 Damn, this year has been interesting.
