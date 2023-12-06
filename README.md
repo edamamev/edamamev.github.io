@@ -1,4 +1,4 @@
-# Edme's Blog
+# Eda's Blog
 Just where I keep my public journal essentially.
 
 Gonna hand this out to prospective employers so they know what I've been up to.
