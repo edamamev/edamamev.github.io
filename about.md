@@ -25,11 +25,13 @@ Look fellas, I'm on the autism spectrum. So my brain is wired differently. Not b
 > If you know, you know
 
 ## Socials
-Find me on [GitHub](https://github.com/edamame-v), I might have a twitter in the future, but meh.
+[GitHub](https://github.com/edamame-v)
+
+[cohost!](https://cohost.org/edamamev)
 
 ## In Closing...
 So yeah! This page is gonna be occassionally updated when there's more 'Me Lore' I want to share with the world, but until then, take a look at some [blog posts!](https://edamame-v.github.io) Who knows what I've been up to, I sure as hell don't.
 
-Take care, and until next time,
+Take care! And until next time,
 
-Cheers.
+Cheers!
