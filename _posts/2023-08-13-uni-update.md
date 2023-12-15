@@ -1,6 +1,7 @@
 ---
 title: Week 3 Uni Update
 date: 2023-08-13 07:00:00
+category: Uni Update
 ---
 
 So. It's Week 3 of my second semester into Biomedical Sciences.

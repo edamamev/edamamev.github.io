@@ -1,5 +1,6 @@
 ---
 title: About Me
+layout: info
 ---
 
 Ah! Welcome, welcome! Please, grab a seat, and make yourself at home. Allow me to regail you with my story:

@@ -1,5 +1,6 @@
 ---
 title: First Post! Woot!
+layout: post
 date: 2023-06-03 23:30:00
 ---
 

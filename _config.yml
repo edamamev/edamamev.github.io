@@ -4,20 +4,27 @@ description:      "Tis her mind, tread carefully and carry a big gun."
 domain:           edamame-v.github.io
 url:              https://edamame-v.github.io # Site url, without a slash at the end.
 signoff:          "Edme" # Your name
-facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
-google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
-share:            false # Turn on twitter and facebook share buttons
 
-links:
-  - name:         Posts
-    url:          /
-    external:     false
-  - name:         About Me
-    url:          /about
-    external:     false
-# ------------ CONFIGURABLE END ------------
+#--------- BWHAHAA -------------------
 
-permalink:        /posts/:title
+collections:
+  categories:
+    output: true
+
+
+ 
 defaults:
-  - values:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
       layout: "default"
