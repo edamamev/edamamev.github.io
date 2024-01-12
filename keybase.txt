@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/edamamev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://edme.au
+  * I am edamamev (https://keybase.io/edamamev) on keybase.
+  * I have a public key with fingerprint 0768 1EE4 9B61 72B2 D9E0  A2D8 1296 E217 B6E3 F102
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cc325e19cdd86160bdef4c91a395e7c51d0db59dbf29b8c39b142be387621a170a",
+      "fingerprint": "07681ee49b6172b2d9e0a2d81296e217b6e3f102",
+      "host": "keybase.io",
+      "key_id": "1296e217b6e3f102",
+      "kid": "0101e155820f70139eb1367f16f3c9a205a6d22f952ea9e266d49f41dc5148e5ff070a",
+      "uid": "b45ddf74cf7d76c78c196d4e80a29819",
+      "username": "edamamev"
+    },
+    "service": {
+      "hostname": "edme.au",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1705050846,
+  "expire_in": 157680000,
+  "prev": "05cab744422f2491da59ea13b230cb2c392315e62736d0ef3ce977fb8cbf75fd",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNoAnicbVJ7UFVFHOYVeO+MUjBAjMAdj0PD4A3Pnve5YWWNGCMZhDCjPG7nnN0D
+R+BeuPfwklBimIzXGBGUoJOFxhhOWhlKYbzEHtYQkJjm6CBRIDBNGdDoAO2h7K92
+/9jd33zft9/v27241tvD7BnQfDukc+J3L8/LfY2FHuhdr5tlhOyEpYStjMhBqwvK
+hcit23M0SNgIElCkotAUi4CoQChwgCNliFRGEYFEiyziFRZAEsqsCGWVEmVBoUUZ
+MJSMaIHnKCABnpQIK6FqjizkyndpDt2Q5TkBIMSIMgd4SqagiEiJggKgRA5RgJc5
+RKuApDAx2+k2GNicLLlRjObENXywr9r7H/wD3yRAgGUFilR5EtAikgHN8SrgVFoR
+JYpkJQ5SlCqyFJJERHEcZESVARC3wwiIVVXyH9+Fq3Iyw0Ko8oyi8pDnFF5QgIgZ
+SMCuRQGIBtCNXA4pD2E0glIe3hUR5VYCV4s0BRnBGp38h8hDMVIhpuW7nLpTcebi
+Yrau57ttBkkvzTdQxUi2/8u3y5oD4ggxowi53JrTQdgARiq6ZgjikFk8BYazEqgk
+X3Mhu2YgWJwziYdxD/aDc2EVSeYZhsG9U4wIoMSKSAK0TNGkIlP48SgasIijeJqD
+JMJhIZHnVfysssqzKiSMjgocTkMb+5SysKZby3JIeqELEeX9fek+Hp5mD9+HvIy/
+5WE2Pfzgx92K8F8W5nyisxLvz5avf//lmdYzywsLPjknwfYDm848H2NShqPurjR8
+/va6ipaFmtm2gJlQd0NMkym5drefn++XuXdi51ayOs5JkaenvX5oW/vImpaEF2ae
+SKWHasbae7ujbPHjCQdbPzr7PTlSXPvzYFYNPLLj5uQJgi15buMG7sWSpbkiuMv7
+x/ij9b8+ldElXUlaNk3wKQPd3TNL04/6VR7aPRwcNVt9PaP1i4NrDnwsBKa3ZW6b
+vUFf6vnwl9jfWq52nxq5vQ1ULsCJroJN/Xvne6WB1GZierCv2+PaS9XfDJQ10+rK
+xauWnuPhk3lDtgtVI1VxSaF9W7SJpVTPN55JGhw1R6S/igpE65XHLT3H5kNu3E+Z
+9/VN2nN6+PAfmc9OjS8s9m3oq/Y9nCh2XUurBJv1Ze+69rDGnJDA/fTRish1lseC
+7pGfNoXsa5z3Pzv1VnKqf1WnJfmvztKvO7b2b9/6Wn2KKbz09RMfDIe9M4rOv7n+
+ll51xJY95W9uNC1WZB7rDOzNTLfURB+KngyuOHf3p/OK9tXod44gdmftyFjdIrHr
+E66sK/iVmoiNCXd8Y7+NLI5v3HmpTA5IYwfiluve23O9ypzWoLtPDSU+uderickI
+mg21nwydjcl7OhZdrtu/I/wz6+SW49a47DnF0jEzNxVmGttsGRi/1z/e7l2v/1kk
+7gv0uTDyN9Ddv3o=
+=NljZ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/edamamev
+
+==================================================================
