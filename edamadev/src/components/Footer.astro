@@ -1,0 +1,34 @@
+---
+import Social from "./Social.astro"
+import Edme from "./Edme.astro"
+import { Skull } from '@lucide/astro'
+---
+<footer>
+    <hr>
+    <nav class="poetry">
+        <li class="poem">
+            <a href="https://www.github.com/edamamev" rel="me">
+                <img src="/src/images/github.svg" alt="GitHub" style="width: 32px; height: 32px;">
+            </a>
+        </li>
+        <li class="poem">
+            <a href="https://bsky.app/profile/edamamev.bsky.social" rel="me">
+                <img src="/src/images/bluesky.svg" alt="Blue Sky" style="width: 32px; height: 32px">
+            </a>
+        </li>
+        <li class="poem">
+            <a href="https://www.reddit.com/user/edamamev/" rel="me">
+                <img src="/src/images/reddit.svg" alt="Reddit" style="width: 32px; height: 32px">
+            </a>
+        </li>
+        <li class="poem">
+            <a href="">
+                <img src="/src/images/discord.svg" alt="Discord" style="width: 32px; height: 32px">
+            </a>
+        </li>
+    </nav>
+    <hr>
+    <div>
+        <Edme />
+    </div>
+</footer>
