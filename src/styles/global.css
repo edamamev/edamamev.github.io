@@ -6,73 +6,71 @@
     --accent: #163383;
 } */
 :root {
-    --text: #d3b9d5;
-    --background: #110f13;
-    --primary: #4f0656;
-    --secondary: #630e70;
-    --accent: #7c99e9;
+  --text: #d3b9d5;
+  --background: #110f13;
+  --primary: #4f0656;
+  --secondary: #630e70;
+  --accent: #7c99e9;
 }
 
 body {
-    max-width: 650px;
-    margin: 40px auto;
-    padding: 0 10px;
-    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: var(--text);
-    background-color: var(--background);
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--text);
+  background-color: var(--background);
 }
 
 h1,
 h2,
 h3 {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 a:link {
-    color: var(--accent)
+  color: var(--accent)
 }
 
-a:visited{
-    color: var(--accent)
+a:visited {
+  color: var(--accent)
 }
 
 
-.nav {
+.nav {}
 
-}
-
-.nav li{
-    color: #ffffff
+.nav li {
+  color: #ffffff
 }
 
 .h-card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#music {
-    max-width: 550px;
-    /*background-color: aliceblue;*/
-    margin: auto;
+#actualcontent {
+  max-width: 550px;
+  /*background-color: aliceblue;*/
+  margin: auto;
 }
 
 #dance {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.poetry {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.shelf {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.poem{
-    display: inline-block;
-    padding: 10px;
+.shelfitem {
+  display: inline-block;
+  padding: 10px;
 }
