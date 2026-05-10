@@ -8,7 +8,13 @@ const pageTitle = "Articles"
   <div slot="below-title">Lorem Ipsum</div>
     <div slot="below-break">
       {allPosts.map((article : any) =>
-        <ListItem title={article.frontmatter.title} description={article.frontmatter.description} pubDate={article.frontmatter.pubDate} tags={article.frontmatter.tags} url={article.url}/>
+        <ListItem
+          title={article.frontmatter.title}
+          description={article.frontmatter.description}
+          pubDate={article.frontmatter.pubDate}
+          tags={article.frontmatter.tags}
+          url={article.url}
+        />
       )}
     </div>
   </div>
