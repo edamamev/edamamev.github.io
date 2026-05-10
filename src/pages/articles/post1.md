@@ -1,10 +1,10 @@
 ---
 title: 'Init'
 pubDate: 2025-10-01
-description: 'Desc'
+description: 'First post on the blog — hello world and some thoughts.'
 author: 'edamamev'
-tags: ["thoughts"]
+tags: ["meta", "thoughts"]
+layout: ../../layouts/Article.astro
 ---
 
-# Fucking Oath eh?
 bwaa

@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/Base.astro";
+import ListItem from "../../components/ListItem.astro";
+
+export async function getStaticPaths() {
+  const allPosts = Object.values(import.meta.glob('../articles/*.md', { eager: true }));
+  const tags = [...new Set(allPosts.flatMap((p: any) => p.frontmatter.tags))];
+  return tags.map(tag => ({
+    params: { tag: encodeURIComponent(tag) },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.params;
+const allPosts = Object.values(import.meta.glob('../articles/*.md', { eager: true }))
+  .sort((a: any, b: any) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime())
+  .filter((p: any) => p.frontmatter.tags.includes(tag));
+const pageTitle = `#${tag}`;
+---
+
+<Base pageTitle={pageTitle}>
+  <div slot="below-title">Posts tagged: {tag}</div>
+  <ul class="post-list" slot="below-break">
+    {allPosts.map((post: any) =>
+      <ListItem
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        pubDate={post.frontmatter.pubDate}
+        tags={post.frontmatter.tags}
+        url={post.url}
+      />
+    )}
+  </ul>
+</Base>

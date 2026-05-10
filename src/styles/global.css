@@ -61,6 +61,25 @@ a:visited {
   margin-right: auto;
 }
 
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.post-desc {
+  padding-left: 1rem;
+}
+
+.sep {
+  margin: 0 0.5rem;
+}
+
 .shelf {
   list-style-type: none;
   margin: 0;
