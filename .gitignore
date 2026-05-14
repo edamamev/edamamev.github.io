@@ -2,3 +2,4 @@ node_modules/
 .astro/
 .git/
 dist/
+src/pages/posts/
