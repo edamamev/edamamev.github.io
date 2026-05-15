@@ -1,0 +1,57 @@
+---
+title: 'Building a Pentesting Environment'
+pubDate: 2026-05-15
+description: 'The setup I have for my pentesting lab at Tafe College'
+author: 'edamamev'
+tags: ["networking", "pentesting", "lab"]
+layout: ../../layouts/Post.astro
+---
+import { Image } from 'astro:assets';
+import koshka from '../../assets/2026-05-15-Koshka.png';
+import lab from '../../assets/2026-05-15-Lab.png';
+import red26 from '../../assets/2026-05-15-RED26.png';
+import red25 from '../../assets/2026-05-15-RED25.png';
+import dawn from '../../assets/2026-05-15-Dawn.png';
+
+Good evening!
+I wanted my first post here to be something of value, something I can proudly show to the world as part of my resume. So, here it is.
+
+My Tafe instructor let me use an additional workstation for hosting vulnerable VMs to practice my pentesting.
+
+## Devices and Configuration
+### Cisco Catalyst 2960 (AKA Koshka)
+> Found this beauty on Facebook Marketplace for $90AUD. Nothing wrong with her :D
+
+<Image src={koshka} alt="Cisco Switch" style="display: block; margin-left: auto; margin-right: auto;"/>
+### Workstations
+> Running Windows 11 and Hyper-V
+
+Both devices have two Network Interface Cards (NICs), one for connecting to the local college network, and the other for exercises like this.
+### Virtual Machines
+#### RED 2-6
+> My primary workstation. 
+<Image src={red26} alt="RED 2-7, my Primary Workstation." style="display: block; margin-left: auto; margin-right: auto;" />
+The VM setup for this one is just a Kali machine. I will be attacking the other workstation from here.
+
+I connected a Virtual Switch that accesses the second NIC on the machine.
+#### RED 2-5
+> The secondary workstation.
+<Image src={red25} alt="RED 2-7, my Secondary Workstation." style="display: block; margin-left: auto; margin-right: auto;" />
+The VM setup here is a 2022 Windows Server. It's just an ISO we used in a separate exercise. I will be hosting other services later.
+
+A Virtual Switch with the same config was added.
+
+#### Framework 13 Laptop (AKA Dawn)
+> My personal laptop!
+<Image src={dawn} alt="My laputopu" style="display: block; margin-right: auto; margin-left: auto;"/>
+Runs Debian. Has an ethernet expansion card for interfacing with this network.
+
+## Networking
+Both workstations and Dawn were connected to Koshka via ethernet. 
+
+<Image src={lab} alt="The Lab environment." style="display: block; margin-right: auto; margin-left: auto; width: 90%; height: 90%;"/>
+
+
+Yeah! I just wanted to show this off so when I start hosting Vulnerable Machines from <a href="https://vwad.owasp.org/">OWASP</a> there's some context ^^
+
+Alrighty, catch you guys later!

@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import ListItem from "../components/ListItem.astro";
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }))
+const allPosts = Object.values(import.meta.glob('./posts/*.mdx', { eager: true }))
   .sort((a : any, b : any) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
 const pageTitle = "Posts"
 ---
