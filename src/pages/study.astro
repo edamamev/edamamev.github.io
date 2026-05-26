@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro"
+import UnitProgressItem from "../components/UnitProgressItem.astro"
+import { getCollection } from 'astro:content'
+import study from '../data/study.json'
 const pageTitle = "Edme’s Study Progress"
 ---
 <Base pageTitle={pageTitle}>
@@ -9,133 +12,18 @@ const pageTitle = "Edme’s Study Progress"
   <br>
   <br>
   <div slot="below-break">
-    <h2>Cert IV in Cybersecurity</h2>
-    <code>
-      VU23223 Apply Cybersecurity Legislation, Privacy, and Ethical Practices
-      <br>
-      ██████████░░░░░░░░░░  50%
-    </code>
-    <br>
-    <br>
-    <code>
-      VU23217 Recognise the Need for Cybersecurity in an Organisation
-      <br>
-      ██████████░░░░░░░░░░  50%
-    </code>
-    <br>
-    <br>
-    <code>
-      BSBINS401 and ICTICT443 Cyber Research Cluster
-      <br>
-      ██████████░░░░░░░░░░  50%
-    </code>
-    <br>
-    <br><code>
-      VU23213 Utilise Basic Network Concepts
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      VU23216 Perform Basic Cyber Security Data Analysis
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      BSBWHS309 Contribute Effectively to WHS Communication and Consultation Processes
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      VU23218 Implement Network Security Infrastructure for an Organisation
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <h2>a+ Cyber</h2>
-    <code>
-      7.0 Linux App Server Fundamentals
-      <br>
-      █████████████░░░░░░░  63%
-    </code>
-    <br>
-    <br>
-    <code>
-      6.0 Cybersecurity Controls
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      5.0 Enterprise Network Application Fundamentals
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-      <code>
-      4.0 Enterprise Campus Network Fundamentals
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-      <code>
-      3.0 Secure Network Client Fundamentals
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      2.0 Microsoft Windows Administration Fundamentals
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      1.0 Cybersecurity Support Roles
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <h2>Junior Cybersecurity Analyst</h2>
-    <code>
-      Endpoint Security
-      <br>
-      ███████░░░░░░░░░░░░░  34%
-    </code>
-    <br>
-    <br>
-    <code>
-      Networking Devices and Initial Configuration
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      Networking Basics
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    <code>
-      Introduction to Cybersecurity
-      <br>
-      ████████████████████ 100%
-    </code>
-    <br>
-    <br>
-    
+    {
+      study.map(course => (
+        <section>
+          <h2>{course.course}</h2>
+          {course.units.map( unit =>(
+          <UnitProgressItem
+            unitTitle={unit.title}
+            progressPercentage={unit.progressPercentage}
+          />
+          ))}
+        </section>
+      ))
+    }
   </div>
 </Base>

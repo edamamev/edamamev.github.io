@@ -1,0 +1,89 @@
+[
+  {
+  "course" : "Cert IV in Cybersecurity",
+  "units" : [
+    {
+      "title" : "VU23217 Recognise the Need for Cybersecurity in an Organisation",
+      "progressPercentage" : 50
+    },
+    {
+      "title" : "VU23223 Apply Cybersecurity Legislation, Privacy, and Ethical Practices",
+      "progressPercentage" : 50
+    },
+    {
+      "title" : "BSBINS401 and ICTICT443 Cyber Research Cluster",
+      "progressPercentage" : 50
+    },
+    {
+      "title" : "VU23213 Utilise Basic Network Concepts",
+      "progressPercentage" : 100
+    },
+    {
+      "title" : "VU23216 Perform Basic Cyber Security Data Analysis",
+      "progressPercentage" : 100
+    },
+    {
+      "title" : "BSBWHS309 Contribute Effectively to WHS Communication and Consultation Processes",
+      "progressPercentage" : 100
+    },
+    {
+      "title" : "VU23218 Implement Network Security Infrastructure for an Organisation",
+      "progressPercentage" : 100
+    }
+  ]
+},
+  {
+    "course" : "a+ Cyber",
+    "units" : [
+      {
+        "title" : "7.0 Linux App Server Fundamentals",
+        "progressPercentage" : 63
+      },
+      {
+        "title" : "6.0 Cybersecurity Controls",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "5.0 Enterprise Network Application Fundamentals",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "4.0 Enterprise Campus Network Fundamentals",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "3.0 Secure Network Client Fundamentals",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "2.0 Microsoft Windows Administration Fundamentals",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "1.0 Cybersecurity Support Roles",
+        "progressPercentage" : 100
+      }
+    ]
+  },
+  {
+    "course" : "Junior Cybersecurity Analyst",
+    "units" : [
+      {
+        "title" : "Endpoint Security",
+        "progressPercentage" : 34
+      },
+      {
+        "title" : "Networking Devices and Initial Configuration",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "Networking Basics",
+        "progressPercentage" : 100
+      },
+      {
+        "title" : "Introduction to Cybersecurity",
+        "progressPercentage" : 100
+      }
+    ]
+  }
+]
