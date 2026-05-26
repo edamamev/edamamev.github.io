@@ -1,4 +1,0 @@
-# TODO
-
-## Functioinality
-- [ ] RSS Feed
