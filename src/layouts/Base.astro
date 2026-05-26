@@ -9,9 +9,12 @@ const { pageTitle, li1, li2, li3, p0 } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-<head> <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{pageTitle}</title>
+    <link rel="webmention" type="" href="https://webmention.io/edme.vuntak.au/webmention">
+    <link rel="pingback" type="" href="https://webmention.io/edme.vuntak.au/xmlrpc">
 </head>
 <body>
     <Header />

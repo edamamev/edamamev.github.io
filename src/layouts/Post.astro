@@ -13,6 +13,8 @@ const formattedDate = new Date(pubDate).toISOString().slice(0, 10);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
+  <link rel="webmention" type="" href="https://webmention.io/edme.vuntak.au/webmention">
+  <link rel="pingback" type="" href="https://webmention.io/edme.vuntak.au/xmlrpc">
 </head>
 <body>
   <Header />
@@ -23,12 +25,14 @@ const formattedDate = new Date(pubDate).toISOString().slice(0, 10);
       <p>
         <time class="dt-published" datetime={formattedDate}>{formattedDate}</time>
         <span class="sep"> | </span>
-        <span
-            set:html={
-              tags.map(tag =>
-            `<a class="p-category" href="/tags/${encodeURIComponent(tag)}">${tag}</a>`).join(", ")
-            }
-        />
+        <span>
+          {tags.map((tag, i) => (
+            <>
+            {i > 0 && <span class="sep">, </span>}
+            <a class="p-category" href="/tags/{encodeURIComponent(tag)}">{tag}</a>
+            </>
+          ))}
+        </span>
       </p>
 
       <p class="p-summary">{description}</p>
