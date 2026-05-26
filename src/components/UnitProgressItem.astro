@@ -1,0 +1,12 @@
+---
+const { unitTitle, progressPercentage } = Astro.props;
+const filled = Math.min(Math.round(progressPercentage / 5), 20);
+const empty = 20 - filled;
+---
+<code>
+  { unitTitle }
+  <br>
+  { '█'.repeat(filled) + '░'.repeat(empty) + ' ' + progressPercentage }%
+  <br>
+  <br>
+</code>
