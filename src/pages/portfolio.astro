@@ -1,0 +1,118 @@
+---
+import Base from "../layouts/Base.astro"
+import "../styles/portfolio.css"
+
+const pageTitle = "Cybersecurity Portfolio"
+
+const skills = [
+  { id: "4.4", name: "Penetration Testing", cluster: "Offensive" },
+  { id: "2.1", name: "Threat Intelligence & Modelling", cluster: "Offensive" },
+  { id: "2.2", name: "Risk Assessment", cluster: "Offensive" },
+  { id: "7.2", name: "Applied Research", cluster: "Offensive" },
+  { id: "6.1", name: "Intrusion Detection & Analysis", cluster: "Defensive" },
+  { id: "6.2", name: "Incident Management & Response", cluster: "Defensive" },
+  { id: "6.3", name: "Digital Forensics", cluster: "Defensive" },
+  { id: "5.2", name: "Secure Operations & Service Delivery", cluster: "Defensive" },
+  { id: "1.5", name: "Legal & Regulatory Environment", cluster: "Governance" },
+  { id: "4.2", name: "Compliance Monitoring & Testing", cluster: "Governance" },
+  { id: "5.1", name: "Secure Operations Management", cluster: "Governance" },
+  { id: "3.2", name: "Systems Design", cluster: "Engineering" },
+  { id: "3.3", name: "Software Design", cluster: "Engineering" },
+  { id: "3.4", name: "Software Development", cluster: "Engineering" },
+]
+
+// Case studies imported from MDX — same pattern as posts.astro
+const allCases = Object.values(
+  import.meta.glob('./case_study/*.mdx', { eager: true })
+).sort((a: any, b: any) => {
+  const da = a.frontmatter.date, db = b.frontmatter.date
+  if (!da && !db) return 0
+  if (!da) return 1
+  if (!db) return -1
+  return new Date(db).getTime() - new Date(da).getTime()
+})
+
+// Build skills map from MDX frontmatter
+const skillMap = new Map<string, string>()
+skills.forEach(s => skillMap.set(s.id, "not-covered"))
+allCases.forEach((c: any) => {
+  const fm = c.frontmatter
+  if (fm.skills) {
+    fm.skills.forEach((skillName: string) => {
+      // Match skill name to ID
+      for (const s of skills) {
+        if (skillName.includes(s.id)) {
+          skillMap.set(s.id, fm.status === "Complete" ? "demonstrated" : "target")
+        }
+      }
+    })
+  }
+})
+---
+
+<Base pageTitle={pageTitle}>
+  <p slot="below-title">
+    Demonstrating 15 skills from the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener">ASD Cyber Skills Framework</a> —
+    Incident Response and Penetration Tester roles.
+  </p>
+
+  <div slot="below-break">
+    <h2>Skills Matrix</h2>
+    <table class="skills-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Skill</th>
+          <th>Cluster</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          skills.map(s => {
+            const status = skillMap.get(s.id) || "not-covered"
+            const badge =
+              status === "demonstrated"
+                ? '<span class="badge badge-demonstrated">Demonstrated</span>'
+                : status === "target"
+                  ? '<span class="badge badge-planned">Planned</span>'
+                  : '<span class="badge badge-uncovered">TBA</span>'
+            return (
+              <tr>
+                <td>{s.id}</td>
+                <td>{s.name}</td>
+                <td>{s.cluster}</td>
+                <td><Fragment set:html={badge} /></td>
+              </tr>
+            )
+          })
+        }
+      </tbody>
+    </table>
+
+    <hr />
+
+    <h2>Case Studies</h2>
+    {
+      allCases.map((c: any) => {
+        const fm = c.frontmatter
+        return (
+          <article class="case-card">
+            <h3>
+              <a href={c.url}>{fm.title}</a>
+            </h3>
+            <p class="case-meta">
+              <span class={fm.status === "Complete" ? "complete" : fm.status === "In Progress" ? "in-progress" : "planned"}>
+                {fm.status === "Complete" ? `Completed ${new Date(fm.date).toISOString().slice(0, 10)}` : fm.status}
+              </span>
+            </p>
+            <p>{fm.description}</p>
+            {fm.skills && fm.skills.length > 0 && (
+              <p class="case-card-skills"><strong>Skills:</strong> {fm.skills.join(" · ")}</p>
+            )}
+          </article>
+        )
+      })
+    }
+  </div>
+</Base>

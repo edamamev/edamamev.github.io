@@ -1,0 +1,92 @@
+/* Portfolio page styles — uses global CSS variables */
+
+/* Skills Matrix */
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--primary);
+}
+
+.skills-table th {
+  color: var(--accent);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-demonstrated {
+  background: #1a3a1a;
+  color: #7ec77e;
+}
+
+.badge-planned {
+  background: #3a2a0a;
+  color: #d4a84b;
+}
+
+.badge-uncovered {
+  background: #1a1a1a;
+  color: #666;
+}
+
+/* Case Study Cards */
+.case-card {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.case-card:last-child {
+  border-bottom: none;
+}
+
+.case-card h3 {
+  margin-bottom: 0.25rem;
+}
+
+.case-card h3 a {
+  color: var(--accent);
+}
+
+.case-meta {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.case-meta .complete {
+  color: #7ec77e;
+}
+
+.case-meta .in-progress {
+  color: #d4a84b;
+}
+
+.case-meta .planned {
+  color: #666;
+}
+
+.case-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.case-card-skills,
+.case-card-artefacts {
+  font-size: 0.85rem;
+  color: var(--text);
+}
