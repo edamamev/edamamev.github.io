@@ -36,8 +36,12 @@
     "course" : "a+ Cyber",
     "units" : [
       {
+        "title" : "9.0 Data Management Fundamentals",
+        "progressPercentage" : 0
+      },
+      {
         "title" : "8.0 Automation Scripting Fundamentals",
-        "progressPercentage" : 78
+        "progressPercentage" : 100
       },
       {
         "title" : "7.0 Linux App Server Fundamentals",
