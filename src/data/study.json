@@ -3,6 +3,22 @@
   "course" : "Cert IV in Cybersecurity",
   "units" : [
     {
+        "title": "VU23220/1 Cyber Incident Response Cluster",
+        "progressPercentage": 0
+    },
+    {
+        "title": "ICTPRG434/5 Cyber Automation Cluster",
+        "progressPercentage": 0
+    },
+    {
+        "title": "VU23215 Test Concepts and Proecudures for Cyber Security",
+        "progressPercentage": 0
+    },
+    {
+        "title": "VU23222 Expose Website Security Vulnerabilities",
+        "progressPercentage": 100
+    },
+    {
       "title" : "VU23217 Recognise the Need for Cybersecurity in an Organisation",
       "progressPercentage" : 100
     },
@@ -12,7 +28,7 @@
     },
     {
       "title" : "BSBINS401 and ICTICT443 Cyber Research Cluster",
-      "progressPercentage" : 50
+      "progressPercentage" : 100
     },
     {
       "title" : "VU23213 Utilise Basic Network Concepts",
@@ -37,7 +53,7 @@
     "units" : [
       {
         "title" : "9.0 Data Management Fundamentals",
-        "progressPercentage" : 84
+        "progressPercentage" : 100
       },
       {
         "title" : "8.0 Automation Scripting Fundamentals",
